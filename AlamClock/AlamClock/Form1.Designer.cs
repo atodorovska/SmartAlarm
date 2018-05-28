@@ -1,4 +1,4 @@
-﻿namespace AlamClock
+﻿namespace AlarmClock
 {
     partial class Form1
     {
@@ -28,34 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnSetAlarm = new System.Windows.Forms.Button();
+            this.DatePicker = new System.Windows.Forms.DateTimePicker();
+            this.upDownMinutes = new System.Windows.Forms.NumericUpDown();
+            this.upDownHours = new System.Windows.Forms.NumericUpDown();
+            this.upDownPMAM = new System.Windows.Forms.DomainUpDown();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnSetAlarm
             // 
-            this.button1.Location = new System.Drawing.Point(181, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Maze";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSetAlarm.Location = new System.Drawing.Point(296, 104);
+            this.btnSetAlarm.Name = "btnSetAlarm";
+            this.btnSetAlarm.Size = new System.Drawing.Size(75, 23);
+            this.btnSetAlarm.TabIndex = 0;
+            this.btnSetAlarm.Text = "Set Alarm";
+            this.btnSetAlarm.UseVisualStyleBackColor = true;
+            this.btnSetAlarm.Click += new System.EventHandler(this.btnSetAlarm_Click);
+            // 
+            // DatePicker
+            // 
+            this.DatePicker.Location = new System.Drawing.Point(72, 64);
+            this.DatePicker.Name = "DatePicker";
+            this.DatePicker.Size = new System.Drawing.Size(200, 20);
+            this.DatePicker.TabIndex = 1;
+            this.DatePicker.Value = new System.DateTime(2018, 5, 28, 0, 0, 0, 0);
+            // 
+            // upDownMinutes
+            // 
+            this.upDownMinutes.Location = new System.Drawing.Point(138, 104);
+            this.upDownMinutes.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.upDownMinutes.Name = "upDownMinutes";
+            this.upDownMinutes.Size = new System.Drawing.Size(60, 20);
+            this.upDownMinutes.TabIndex = 3;
+            // 
+            // upDownHours
+            // 
+            this.upDownHours.Location = new System.Drawing.Point(72, 104);
+            this.upDownHours.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.upDownHours.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.upDownHours.Name = "upDownHours";
+            this.upDownHours.Size = new System.Drawing.Size(60, 20);
+            this.upDownHours.TabIndex = 4;
+            this.upDownHours.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // upDownPMAM
+            // 
+            this.upDownPMAM.Items.Add("PM");
+            this.upDownPMAM.Items.Add("AM");
+            this.upDownPMAM.Location = new System.Drawing.Point(204, 104);
+            this.upDownPMAM.Name = "upDownPMAM";
+            this.upDownPMAM.ReadOnly = true;
+            this.upDownPMAM.Size = new System.Drawing.Size(68, 20);
+            this.upDownPMAM.TabIndex = 5;
+            this.upDownPMAM.Text = "PM";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.upDownPMAM);
+            this.Controls.Add(this.upDownHours);
+            this.Controls.Add(this.upDownMinutes);
+            this.Controls.Add(this.DatePicker);
+            this.Controls.Add(this.btnSetAlarm);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Smart Alarm";
+            ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSetAlarm;
+        private System.Windows.Forms.DateTimePicker DatePicker;
+        private System.Windows.Forms.NumericUpDown upDownMinutes;
+        private System.Windows.Forms.NumericUpDown upDownHours;
+        private System.Windows.Forms.DomainUpDown upDownPMAM;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

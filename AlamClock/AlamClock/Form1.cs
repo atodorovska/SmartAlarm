@@ -8,21 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlamClock
+namespace AlarmClock
 {
     public partial class Form1 : Form
     {
+        private Alarm a;
+        private bool alarmON;
         public Form1()
         {
             InitializeComponent();
+            timer1 = new Timer();
+            alarmON = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSetAlarm_Click(object sender, EventArgs e)
         {
-            Maze mazeGame = new Maze();
-            //this.Hide();
-            mazeGame.Show();
-            //this.Show();
+            
+            String date = DatePicker.Value.ToString("dd/MM/yyyy");
+            String time = upDownHours.Value +":"+upDownMinutes.Value +" " + upDownPMAM.Text;
+            a = new Alarm(date, time, 0, 0, "bla");
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (alarmON == false)
+            {
+                if (a!= null && a.check())
+               {
+                alarmON = true;
+                a.start();
+                }
+            }
         }
     }
 }

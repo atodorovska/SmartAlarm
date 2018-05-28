@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlamClock
+namespace AlarmClock
 {
     public partial class Maze : Form
     {
@@ -19,8 +19,8 @@ namespace AlamClock
 
         private void Finish_MouseEnter(object sender, EventArgs e)
         {
-            MessageBox.Show("Bravo!");
-            Close();
+            Alarm.player.controls.stop();
+            this.Close();
         }
 
         public void MoveToStart()

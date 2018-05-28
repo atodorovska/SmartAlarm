@@ -1,4 +1,4 @@
-﻿namespace AlamClock
+﻿namespace AlarmClock
 {
     partial class Maze
     {
