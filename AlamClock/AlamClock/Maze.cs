@@ -19,7 +19,7 @@ namespace AlarmClock
 
         private void Finish_MouseEnter(object sender, EventArgs e)
         {
-            Alarm.player.controls.stop();
+            Alarm.player.Stop();
             this.Close();
         }
 

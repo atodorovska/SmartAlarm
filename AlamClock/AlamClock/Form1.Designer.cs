@@ -41,7 +41,7 @@
             // 
             // btnSetAlarm
             // 
-            this.btnSetAlarm.Location = new System.Drawing.Point(296, 104);
+            this.btnSetAlarm.Location = new System.Drawing.Point(279, 118);
             this.btnSetAlarm.Name = "btnSetAlarm";
             this.btnSetAlarm.Size = new System.Drawing.Size(75, 23);
             this.btnSetAlarm.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // DatePicker
             // 
-            this.DatePicker.Location = new System.Drawing.Point(72, 64);
+            this.DatePicker.Location = new System.Drawing.Point(55, 78);
             this.DatePicker.Name = "DatePicker";
             this.DatePicker.Size = new System.Drawing.Size(200, 20);
             this.DatePicker.TabIndex = 1;
@@ -59,26 +59,27 @@
             // 
             // upDownMinutes
             // 
-            this.upDownMinutes.Location = new System.Drawing.Point(138, 104);
+            this.upDownMinutes.Location = new System.Drawing.Point(121, 118);
             this.upDownMinutes.Maximum = new decimal(new int[] {
-            59,
+            60,
             0,
             0,
             0});
+            this.upDownMinutes.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             this.upDownMinutes.Name = "upDownMinutes";
             this.upDownMinutes.Size = new System.Drawing.Size(60, 20);
             this.upDownMinutes.TabIndex = 3;
+            this.upDownMinutes.ValueChanged += new System.EventHandler(this.upDownMinutes_ValueChanged);
             // 
             // upDownHours
             // 
-            this.upDownHours.Location = new System.Drawing.Point(72, 104);
+            this.upDownHours.Location = new System.Drawing.Point(55, 118);
             this.upDownHours.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.upDownHours.Minimum = new decimal(new int[] {
-            1,
+            13,
             0,
             0,
             0});
@@ -90,12 +91,13 @@
             0,
             0,
             0});
+            this.upDownHours.ValueChanged += new System.EventHandler(this.upDownHours_ValueChanged);
             // 
             // upDownPMAM
             // 
             this.upDownPMAM.Items.Add("PM");
             this.upDownPMAM.Items.Add("AM");
-            this.upDownPMAM.Location = new System.Drawing.Point(204, 104);
+            this.upDownPMAM.Location = new System.Drawing.Point(187, 118);
             this.upDownPMAM.Name = "upDownPMAM";
             this.upDownPMAM.ReadOnly = true;
             this.upDownPMAM.Size = new System.Drawing.Size(68, 20);

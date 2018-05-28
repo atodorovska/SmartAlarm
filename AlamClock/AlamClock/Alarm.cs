@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Media;
-using WMPLib;
+using AlarmClock.Properties;
 
 namespace AlarmClock
 {
@@ -16,7 +16,7 @@ namespace AlarmClock
         public int Limit { set; get; }
         public String Ringtone { set; get; }
         public int Game { set; get; }
-        public static WMPLib.WindowsMediaPlayer player { set; get; }
+        public static SoundPlayer  player { set; get; }
 
         public Alarm(String date, String time, int snooze, int limit,String ringtone)
         {
@@ -25,9 +25,7 @@ namespace AlarmClock
             this.Snooze = snooze;
             this.Ringtone = ringtone;
             this.Limit = limit;
-            player= new WMPLib.WindowsMediaPlayer();
-            player.URL = @"C:\Users\Dragana\Downloads\yourbody.mp3";
-            player.controls.stop();
+            player = new SoundPlayer(Resources.lalala);
             // = Ringtone
             Game = 0;
         }
@@ -35,7 +33,8 @@ namespace AlarmClock
         public bool check()
         {
             String currDate = DateTime.Now.ToString("dd/MM/yyyy");
-            String currTime = DateTime.Now.ToString("h:mm tt"); 
+            String currTime = DateTime.Now.ToString("h:m tt");
+            
             if (Date == currDate && Time == currTime)
                return true;
             else return false;
@@ -43,7 +42,7 @@ namespace AlarmClock
 
         public void start()
         {
-            player.controls.play();
+            player.Play();
             //if(Game==0)
             Maze mazeGame = new Maze();
             mazeGame.Show();

@@ -59,5 +59,14 @@ namespace AlarmClock.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lalala {
+            get {
+                return ResourceManager.GetStream("lalala", resourceCulture);
+            }
+        }
     }
 }

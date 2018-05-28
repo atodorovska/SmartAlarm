@@ -41,5 +41,21 @@ namespace AlarmClock
                 }
             }
         }
+
+        private void upDownMinutes_ValueChanged(object sender, EventArgs e)
+        {
+            if (upDownMinutes.Value == -1)
+                upDownMinutes.Value = 59;
+            if (upDownMinutes.Value == 60)
+                upDownMinutes.Value = 0;
+        }
+
+        private void upDownHours_ValueChanged(object sender, EventArgs e)
+        {
+            if (upDownHours.Value == 0)
+                upDownHours.Value = 12;
+            if (upDownHours.Value == 13)
+                upDownHours.Value = 1;
+        }
     }
 }
