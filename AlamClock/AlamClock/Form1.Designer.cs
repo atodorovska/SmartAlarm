@@ -35,8 +35,14 @@
             this.upDownHours = new System.Windows.Forms.NumericUpDown();
             this.upDownPMAM = new System.Windows.Forms.DomainUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.upDownSnooze = new System.Windows.Forms.NumericUpDown();
+            this.upDownTimes = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownTimes)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSetAlarm
@@ -110,11 +116,58 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // upDownSnooze
+            // 
+            this.upDownSnooze.Location = new System.Drawing.Point(121, 160);
+            this.upDownSnooze.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.upDownSnooze.Name = "upDownSnooze";
+            this.upDownSnooze.Size = new System.Drawing.Size(60, 20);
+            this.upDownSnooze.TabIndex = 6;
+            this.upDownSnooze.ValueChanged += new System.EventHandler(this.upDownSnooze_ValueChanged);
+            // 
+            // upDownTimes
+            // 
+            this.upDownTimes.Location = new System.Drawing.Point(121, 198);
+            this.upDownTimes.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.upDownTimes.Name = "upDownTimes";
+            this.upDownTimes.Size = new System.Drawing.Size(60, 20);
+            this.upDownTimes.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(64, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Snooze:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(67, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Limit:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.upDownTimes);
+            this.Controls.Add(this.upDownSnooze);
             this.Controls.Add(this.upDownPMAM);
             this.Controls.Add(this.upDownHours);
             this.Controls.Add(this.upDownMinutes);
@@ -124,7 +177,10 @@
             this.Text = "Smart Alarm";
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upDownTimes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,6 +192,10 @@
         private System.Windows.Forms.NumericUpDown upDownHours;
         private System.Windows.Forms.DomainUpDown upDownPMAM;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.NumericUpDown upDownSnooze;
+        private System.Windows.Forms.NumericUpDown upDownTimes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

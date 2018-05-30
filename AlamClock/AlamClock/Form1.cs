@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace AlarmClock
         {
             InitializeComponent();
             timer1 = new Timer();
+            DatePicker.Value = DateTime.Now;
             alarmON = false;
         }
 
@@ -26,7 +28,7 @@ namespace AlarmClock
             
             String date = DatePicker.Value.ToString("dd/MM/yyyy");
             String time = upDownHours.Value +":"+upDownMinutes.Value +" " + upDownPMAM.Text;
-            a = new Alarm(date, time, 0, 0, "bla");
+            a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,"bla");
             timer1.Start();
         }
 
@@ -56,6 +58,13 @@ namespace AlarmClock
                 upDownHours.Value = 12;
             if (upDownHours.Value == 13)
                 upDownHours.Value = 1;
+        }
+
+        private void upDownSnooze_ValueChanged(object sender, EventArgs e)
+        {
+            if (upDownSnooze.Value != 0 && upDownTimes.Value == 0)
+                upDownTimes.Value = 1;
+            
         }
     }
 }
