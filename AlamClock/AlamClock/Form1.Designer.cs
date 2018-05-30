@@ -42,6 +42,7 @@
             this.lbAlarms = new System.Windows.Forms.ListBox();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
+            this.lbSongs = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
@@ -174,7 +175,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(144, 314);
+            this.btnRemove.Location = new System.Drawing.Point(305, 135);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 11;
@@ -184,7 +185,7 @@
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(144, 282);
+            this.btnChange.Location = new System.Drawing.Point(386, 135);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(75, 23);
             this.btnChange.TabIndex = 12;
@@ -192,11 +193,20 @@
             this.btnChange.UseVisualStyleBackColor = true;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
+            // lbSongs
+            // 
+            this.lbSongs.FormattingEnabled = true;
+            this.lbSongs.Location = new System.Drawing.Point(30, 187);
+            this.lbSongs.Name = "lbSongs";
+            this.lbSongs.Size = new System.Drawing.Size(150, 82);
+            this.lbSongs.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.lbSongs);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.lbAlarms);
@@ -235,6 +245,7 @@
         private System.Windows.Forms.ListBox lbAlarms;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnChange;
+        private System.Windows.Forms.ListBox lbSongs;
     }
 }
 

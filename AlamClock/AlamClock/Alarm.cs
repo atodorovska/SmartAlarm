@@ -27,8 +27,8 @@ namespace AlarmClock
             this.Snooze = snooze;
             this.Ringtone = ringtone;
             this.Limit = limit;
-            player = new SoundPlayer(Resources.lalala);
-            // = Ringtone
+            this.Ringtone = ringtone;
+            setSong();
             Game = 0;
             AlarmOn = false;
             Done = false;
@@ -97,5 +97,11 @@ namespace AlarmClock
             //+ off_on);
         }
         
+        public void setSong()
+        {
+            if (Ringtone == "Lalala")
+                player = new SoundPlayer(Resources.lalala);
+          //  else if (...);
+        }
     }
 }

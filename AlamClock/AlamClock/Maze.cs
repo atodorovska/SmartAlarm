@@ -16,6 +16,7 @@ namespace AlarmClock
         {
             InitializeComponent();
             MoveToStart();
+            //disable X for exiting
         }
 
         private void Finish_MouseEnter(object sender, EventArgs e)

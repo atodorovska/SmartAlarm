@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AlarmClock.Properties;
 
 namespace AlarmClock
 {
@@ -21,14 +22,19 @@ namespace AlarmClock
             DatePicker.Value = DateTime.Now;
             timer1.Start();
             btnRemove.Enabled = false;
-            btnChange.Enabled = true;
+            btnChange.Enabled = false;
+            lbSongs.Items.Add("Lalala");
+            //add other songs
         }
 
         private void btnSetAlarm_Click(object sender, EventArgs e)
         {
             String date = DatePicker.Value.ToString("dd/MM/yyyy");
             String time = upDownHours.Value +":"+upDownMinutes.Value +" " + upDownPMAM.Text;
-            Alarm a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,"bla");
+            String song = "Lalala"; // default value
+            if (lbSongs.SelectedItem != null)
+                song = lbSongs.SelectedItem as String;
+            Alarm a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,song);
             lbAlarms.Items.Add(a);
 
         }
@@ -100,7 +106,7 @@ namespace AlarmClock
         private void btnChange_Click(object sender, EventArgs e)
         {
             Alarm selected = (lbAlarms.SelectedItem as Alarm);
-
+            // Display all data for the chosen alarm and make changes
             
         }
     }
