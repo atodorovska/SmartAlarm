@@ -15,12 +15,12 @@ namespace AlarmClock
         public Maze()
         {
             InitializeComponent();
+            MoveToStart();
         }
 
         private void Finish_MouseEnter(object sender, EventArgs e)
         {
-            Alarm.player.Stop();
-            this.Close();
+            DialogResult = DialogResult.OK;
         }
 
         public void MoveToStart()

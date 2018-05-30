@@ -39,6 +39,9 @@
             this.upDownTimes = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbAlarms = new System.Windows.Forms.ListBox();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnChange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
@@ -47,7 +50,7 @@
             // 
             // btnSetAlarm
             // 
-            this.btnSetAlarm.Location = new System.Drawing.Point(279, 118);
+            this.btnSetAlarm.Location = new System.Drawing.Point(254, 67);
             this.btnSetAlarm.Name = "btnSetAlarm";
             this.btnSetAlarm.Size = new System.Drawing.Size(75, 23);
             this.btnSetAlarm.TabIndex = 0;
@@ -57,7 +60,7 @@
             // 
             // DatePicker
             // 
-            this.DatePicker.Location = new System.Drawing.Point(55, 78);
+            this.DatePicker.Location = new System.Drawing.Point(30, 27);
             this.DatePicker.Name = "DatePicker";
             this.DatePicker.Size = new System.Drawing.Size(200, 20);
             this.DatePicker.TabIndex = 1;
@@ -65,7 +68,7 @@
             // 
             // upDownMinutes
             // 
-            this.upDownMinutes.Location = new System.Drawing.Point(121, 118);
+            this.upDownMinutes.Location = new System.Drawing.Point(96, 67);
             this.upDownMinutes.Maximum = new decimal(new int[] {
             60,
             0,
@@ -83,7 +86,7 @@
             // 
             // upDownHours
             // 
-            this.upDownHours.Location = new System.Drawing.Point(55, 118);
+            this.upDownHours.Location = new System.Drawing.Point(30, 67);
             this.upDownHours.Maximum = new decimal(new int[] {
             13,
             0,
@@ -103,7 +106,7 @@
             // 
             this.upDownPMAM.Items.Add("PM");
             this.upDownPMAM.Items.Add("AM");
-            this.upDownPMAM.Location = new System.Drawing.Point(187, 118);
+            this.upDownPMAM.Location = new System.Drawing.Point(162, 67);
             this.upDownPMAM.Name = "upDownPMAM";
             this.upDownPMAM.ReadOnly = true;
             this.upDownPMAM.Size = new System.Drawing.Size(68, 20);
@@ -118,7 +121,7 @@
             // 
             // upDownSnooze
             // 
-            this.upDownSnooze.Location = new System.Drawing.Point(121, 160);
+            this.upDownSnooze.Location = new System.Drawing.Point(96, 109);
             this.upDownSnooze.Maximum = new decimal(new int[] {
             30,
             0,
@@ -131,7 +134,7 @@
             // 
             // upDownTimes
             // 
-            this.upDownTimes.Location = new System.Drawing.Point(121, 198);
+            this.upDownTimes.Location = new System.Drawing.Point(96, 147);
             this.upDownTimes.Maximum = new decimal(new int[] {
             5,
             0,
@@ -140,11 +143,12 @@
             this.upDownTimes.Name = "upDownTimes";
             this.upDownTimes.Size = new System.Drawing.Size(60, 20);
             this.upDownTimes.TabIndex = 7;
+            this.upDownTimes.ValueChanged += new System.EventHandler(this.upDownTimes_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 162);
+            this.label1.Location = new System.Drawing.Point(39, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 8;
@@ -153,17 +157,49 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 204);
+            this.label2.Location = new System.Drawing.Point(42, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Limit:";
+            // 
+            // lbAlarms
+            // 
+            this.lbAlarms.FormattingEnabled = true;
+            this.lbAlarms.Location = new System.Drawing.Point(237, 164);
+            this.lbAlarms.Name = "lbAlarms";
+            this.lbAlarms.Size = new System.Drawing.Size(224, 173);
+            this.lbAlarms.TabIndex = 10;
+            this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(144, 314);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.TabIndex = 11;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnChange
+            // 
+            this.btnChange.Location = new System.Drawing.Point(144, 282);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(75, 23);
+            this.btnChange.TabIndex = 12;
+            this.btnChange.Text = "Change";
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.btnChange);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.lbAlarms);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.upDownTimes);
@@ -174,7 +210,7 @@
             this.Controls.Add(this.DatePicker);
             this.Controls.Add(this.btnSetAlarm);
             this.Name = "Form1";
-            this.Text = "Smart Alarm";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).EndInit();
@@ -196,6 +232,9 @@
         private System.Windows.Forms.NumericUpDown upDownTimes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox lbAlarms;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnChange;
     }
 }
 

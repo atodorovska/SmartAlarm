@@ -17,9 +17,9 @@ namespace AlarmClock
         public int Limit { set; get; }
         public String Ringtone { set; get; }
         public int Game { set; get; }  
-        public static SoundPlayer  player { set; get; }
-        public bool SnoozeMode { set; get; }
-
+        public SoundPlayer  player { set; get; }
+        public bool AlarmOn { set; get; }
+        public bool Done { set; get; }
         public Alarm(String date, String time, int snooze, int limit,String ringtone)
         {
             this.Time = time;
@@ -30,7 +30,8 @@ namespace AlarmClock
             player = new SoundPlayer(Resources.lalala);
             // = Ringtone
             Game = 0;
-            SnoozeMode = false;
+            AlarmOn = false;
+            Done = false;
         }
 
         public bool check()
@@ -40,30 +41,32 @@ namespace AlarmClock
             
             if (Date == currDate && Time == currTime && Limit == 0)
             {
+               
                 return true;
             } 
             else
             {
-                if (Date == currDate && Time == currTime && SnoozeMode == false)
+                if (Date == currDate && Time == currTime && AlarmOn == false)
                 {
-                    SnoozeMode = true;
+                    AlarmOn = true;
                     SnoozeIt snoozeBox = new SnoozeIt();
                     player.Play();
                     if (snoozeBox.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
                     {
                         player.Stop();
-                        SnoozeMode = false;
+                        AlarmOn = false;
                         return true;
                     }
                     else
                     {
-                        player.Stop();
-                        SnoozeMode = false;
+                        player.Stop(); 
+                        AlarmOn =false;
                         DateTime dateTime = DateTime.Now;
                         dateTime = dateTime.AddMinutes(Snooze);
                         Date = dateTime.ToString("dd/MM/yyyy");
                         Time = dateTime.ToString("h:m tt");
                         Limit--;
+                        
                     }
                 }
                 return false;
@@ -72,10 +75,26 @@ namespace AlarmClock
 
         public void start()
         {
+            AlarmOn = true;
             player.Play();
+           
             //if(Game==0)
             Maze mazeGame = new Maze();
-            mazeGame.Show();
+            if (mazeGame.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                AlarmOn = false;
+                player.Stop();
+                Done = true;
+            }
+        }
+
+        public override string ToString()
+        {
+            DateTime dateTime = DateTime.ParseExact(Date, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            String dayOfWeek = dateTime.ToString("dddd");
+            // String off_on = Done == true ? " - OFF" : " - ON";
+            return String.Format(Time + ", " + dayOfWeek + " " + Date);
+            //+ off_on);
         }
         
     }
