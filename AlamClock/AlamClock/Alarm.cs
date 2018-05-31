@@ -91,6 +91,7 @@ namespace AlarmClock
         public override string ToString()
         {
             //throws exception here !
+            //no exception
             DateTime dateTime = DateTime.ParseExact(Date, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             String dayOfWeek = dateTime.ToString("dddd");
             // String off_on = Done == true ? " - OFF" : " - ON";
