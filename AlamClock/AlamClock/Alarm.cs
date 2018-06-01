@@ -86,6 +86,15 @@ namespace AlarmClock
                 player.Stop();
                 Done = true;
             }
+
+            //if(Game==1)
+            Shuffle shuffleGame = new Shuffle();
+            if (shuffleGame.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                AlarmOn = false;
+                player.Stop();
+                Done = true;
+            }
         }
 
         public override string ToString()

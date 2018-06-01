@@ -109,5 +109,10 @@ namespace AlarmClock
             // Display all data for the chosen alarm and make changes
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
