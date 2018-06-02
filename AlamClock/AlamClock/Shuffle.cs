@@ -15,6 +15,7 @@ namespace AlarmClock
         public Shuffle()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,7 +33,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
         private void button2_Click_1(object sender, EventArgs e)
@@ -57,7 +59,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
 
         }
@@ -78,7 +81,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -103,7 +107,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -135,7 +140,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -163,7 +169,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -191,7 +198,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -211,7 +219,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
 
@@ -231,7 +240,8 @@ namespace AlarmClock
 
             if ((button1.Text == "1") && (button2.Text == "2") && (button3.Text == "3") && (button4.Text == "4") && (button5.Text == "5") && (button6.Text == "6") && (button7.Text == "7") && (button8.Text == "8") && (button9.Text == ""))
             {
-                Application.Exit();
+                //Application.Exit();
+                DialogResult = DialogResult.OK;
             }
         }
     }

@@ -34,7 +34,14 @@ namespace AlarmClock
             String song = "Lalala"; // default value
             if (lbSongs.SelectedItem != null)
                 song = lbSongs.SelectedItem as String;
-            Alarm a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,song);
+            int game;
+
+            if (maze.Checked) game = 1;
+            else if (shuffle.Checked) game = 2;
+            else if (quiz.Checked) game = 3;
+            else game = 0;
+
+            Alarm a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,song,game);
             lbAlarms.Items.Add(a);
 
         }
@@ -110,9 +117,6 @@ namespace AlarmClock
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
