@@ -73,6 +73,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuessNumberQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuessNumberQuiz.Designer.cs">
+      <DependentUpon>GuessNumberQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuessWordQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuessWordQuiz.Designer.cs">
+      <DependentUpon>GuessWordQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maze.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,17 +93,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shuffle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shuffle.Designer.cs">
+      <DependentUpon>Shuffle.cs</DependentUpon>
+    </Compile>
     <Compile Include="SnoozeIt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SnoozeIt.Designer.cs">
       <DependentUpon>SnoozeIt.cs</DependentUpon>
     </Compile>
+    <Compile Include="SolveEquation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolveEquation.Designer.cs">
+      <DependentUpon>SolveEquation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChangeAlarm.resx">
       <DependentUpon>ChangeAlarm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuessNumberQuiz.resx">
+      <DependentUpon>GuessNumberQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuessWordQuiz.resx">
+      <DependentUpon>GuessWordQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maze.resx">
       <DependentUpon>Maze.cs</DependentUpon>
@@ -106,8 +142,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shuffle.resx">
+      <DependentUpon>Shuffle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SnoozeIt.resx">
       <DependentUpon>SnoozeIt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolveEquation.resx">
+      <DependentUpon>SolveEquation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

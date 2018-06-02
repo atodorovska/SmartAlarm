@@ -10,23 +10,25 @@ using System.Windows.Forms;
 
 namespace AlarmClock
 {
-    public partial class SnoozeIt : Form
+    public partial class GuessNumberQuiz : Form
     {
-        public SnoozeIt()
+        public GuessNumberQuiz()
         {
             InitializeComponent();
             this.ControlBox = false;
         }
 
-        private void snooze_Click(object sender, EventArgs e)
+
+        /*
+         * 
+         * Game implemented here
+         * 
+         */
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
         }
-
-        private void Stop_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.Cancel;
-        }
-
     }
 }

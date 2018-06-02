@@ -43,6 +43,9 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
             this.lbSongs = new System.Windows.Forms.ListBox();
+            this.maze = new System.Windows.Forms.RadioButton();
+            this.quiz = new System.Windows.Forms.RadioButton();
+            this.shuffle = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
@@ -201,11 +204,47 @@
             this.lbSongs.Size = new System.Drawing.Size(150, 82);
             this.lbSongs.TabIndex = 13;
             // 
+            // maze
+            // 
+            this.maze.AutoSize = true;
+            this.maze.Location = new System.Drawing.Point(30, 275);
+            this.maze.Name = "maze";
+            this.maze.Size = new System.Drawing.Size(82, 17);
+            this.maze.TabIndex = 14;
+            this.maze.TabStop = true;
+            this.maze.Text = "Maze Game";
+            this.maze.UseVisualStyleBackColor = true;
+            // 
+            // quiz
+            // 
+            this.quiz.AutoSize = true;
+            this.quiz.Location = new System.Drawing.Point(30, 320);
+            this.quiz.Name = "quiz";
+            this.quiz.Size = new System.Drawing.Size(77, 17);
+            this.quiz.TabIndex = 15;
+            this.quiz.TabStop = true;
+            this.quiz.Text = "Quiz Game";
+            this.quiz.UseVisualStyleBackColor = true;
+            // 
+            // shuffle
+            // 
+            this.shuffle.AutoSize = true;
+            this.shuffle.Location = new System.Drawing.Point(30, 298);
+            this.shuffle.Name = "shuffle";
+            this.shuffle.Size = new System.Drawing.Size(89, 17);
+            this.shuffle.TabIndex = 16;
+            this.shuffle.TabStop = true;
+            this.shuffle.Text = "Shuffle Game";
+            this.shuffle.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 362);
+            this.ClientSize = new System.Drawing.Size(484, 351);
+            this.Controls.Add(this.shuffle);
+            this.Controls.Add(this.quiz);
+            this.Controls.Add(this.maze);
             this.Controls.Add(this.lbSongs);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnRemove);
@@ -246,6 +285,9 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnChange;
         private System.Windows.Forms.ListBox lbSongs;
+        private System.Windows.Forms.RadioButton maze;
+        private System.Windows.Forms.RadioButton quiz;
+        private System.Windows.Forms.RadioButton shuffle;
     }
 }
 

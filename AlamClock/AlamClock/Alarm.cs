@@ -20,7 +20,7 @@ namespace AlarmClock
         public SoundPlayer  player { set; get; }
         public bool AlarmOn { set; get; }
         public bool Done { set; get; }
-        public Alarm(String date, String time, int snooze, int limit,String ringtone)
+        public Alarm(String date, String time, int snooze, int limit,String ringtone, int game)
         {
             this.Time = time;
             this.Date = date;
@@ -29,7 +29,7 @@ namespace AlarmClock
             this.Limit = limit;
             this.Ringtone = ringtone;
             setSong();
-            Game = 0;
+            Game = game;  
             AlarmOn = false;
             Done = false;
         }
@@ -55,6 +55,9 @@ namespace AlarmClock
                     {
                         player.Stop();
                         AlarmOn = false;
+
+                        if (Game == 0) Done = true;
+
                         return true;
                     }
                     else
@@ -75,16 +78,54 @@ namespace AlarmClock
 
         public void start()
         {
-            AlarmOn = true;
-            player.Play();
-           
-            //if(Game==0)
-            Maze mazeGame = new Maze();
-            if (mazeGame.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if(Game == 0)
             {
-                AlarmOn = false;
-                player.Stop();
-                Done = true;
+                
+            }
+
+            if (Game == 1)
+            {
+                AlarmOn = true;
+                player.Play();
+
+                Maze mazeGame = new Maze();
+                if (mazeGame.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    AlarmOn = false;
+                    player.Stop();
+                    Done = true;
+                }
+            }
+
+            
+            else if(Game == 2)
+            {
+                AlarmOn = true;
+                player.Play();
+
+                Shuffle shuffleGame = new Shuffle();
+                if (shuffleGame.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    AlarmOn = false;
+                    player.Stop();
+                    Done = true;
+                }
+            }
+
+            else if(Game == 3)
+            {
+                AlarmOn = true;
+                player.Play();
+
+                Quiz quiz = new Quiz();
+
+                if (quiz.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    AlarmOn = false;
+                    player.Stop();
+                    Done = true;
+                }
+
             }
         }
 

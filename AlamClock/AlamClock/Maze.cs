@@ -17,6 +17,8 @@ namespace AlarmClock
             InitializeComponent();
             MoveToStart();
             //disable X for exiting
+            // this is to do that, meaning form can't be closed on X btn
+            this.ControlBox = false;
         }
 
         private void Finish_MouseEnter(object sender, EventArgs e)
