@@ -67,6 +67,12 @@
     <Compile Include="ChangeAlarm.Designer.cs">
       <DependentUpon>ChangeAlarm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Difficulty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Difficulty.Designer.cs">
+      <DependentUpon>Difficulty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="ChangeAlarm.resx">
       <DependentUpon>ChangeAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Difficulty.resx">
+      <DependentUpon>Difficulty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -200,6 +209,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lalala.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC-DC - Highway to Hell %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iron Maiden - The Trooper %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System Of A Down - Chop Suey!.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Urge Overkill - Girl You%27ll Be a Woman Soon %28online-audio-converter.com%29.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

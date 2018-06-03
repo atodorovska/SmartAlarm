@@ -172,6 +172,7 @@
             this.lbAlarms.FormattingEnabled = true;
             this.lbAlarms.Location = new System.Drawing.Point(237, 164);
             this.lbAlarms.Name = "lbAlarms";
+            this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbAlarms.Size = new System.Drawing.Size(224, 173);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);

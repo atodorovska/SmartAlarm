@@ -118,7 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chopSuey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System Of A Down - Chop Suey!.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="girlWoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Urge Overkill - Girl You'll Be a Woman Soon (online-audio-converter.com).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="highwayToHell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AC-DC - Highway to Hell (online-audio-converter.com).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lalala" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lalala.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="theTrooper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iron Maiden - The Trooper (online-audio-converter.com).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

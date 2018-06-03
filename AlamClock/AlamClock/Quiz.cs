@@ -16,6 +16,10 @@ namespace AlarmClock
         {
             InitializeComponent();
             this.ControlBox = false;
+            Difficulty difficulty = new Difficulty();
+            difficulty.ShowDialog();
+
+            if (difficulty.DialogResult == DialogResult.OK) difficulty.Close();
         }
 
         private void wordQuess_Click(object sender, EventArgs e)

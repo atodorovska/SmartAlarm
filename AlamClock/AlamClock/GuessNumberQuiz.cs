@@ -12,23 +12,50 @@ namespace AlarmClock
 {
     public partial class GuessNumberQuiz : Form
     {
+        public int Number { get; set; }
+
         public GuessNumberQuiz()
         {
             InitializeComponent();
             this.ControlBox = false;
+
+            Random random = new Random();
+
+            if (Difficulty.Mode == 0)
+            {
+                Number = random.Next(11);
+                guessLabel.Text = "You are guessing a number from 0 to 10!";
+            }
+
+            else if (Difficulty.Mode == 1)
+            {
+                Number = random.Next(21);
+                guessLabel.Text = "You are guessing a number from 0 to 20!";
+            }
+
+            else if(Difficulty.Mode == 2)
+            {
+                Number = random.Next(31);
+                guessLabel.Text = "You are guessing a number from 0 to 30!";
+            }
+
+            
         }
-
-
-        /*
-         * 
-         * Game implemented here
-         * 
-         */
-
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            if(guessBox.Text.Trim() == Number.ToString()) DialogResult = DialogResult.OK;
+            else
+            {
+                if(guessBox.Text.CompareTo(Number.ToString()) < 0)
+                {
+                    MessageBox.Show("The secret number is greater than your guess!");
+                }
+                else
+                {
+                    MessageBox.Show("The secret number is smaller than your guess!");
+                }
+            }
         }
     }
 }

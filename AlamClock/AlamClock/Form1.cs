@@ -24,7 +24,10 @@ namespace AlarmClock
             btnRemove.Enabled = false;
             btnChange.Enabled = false;
             lbSongs.Items.Add("Lalala");
-            //add other songs
+            lbSongs.Items.Add("Highway to Hell");
+            lbSongs.Items.Add("The Trooper");
+            lbSongs.Items.Add("Chop Suey");
+            lbSongs.Items.Add("Girl you'll be woman soon");
         }
 
         private void btnSetAlarm_Click(object sender, EventArgs e)
