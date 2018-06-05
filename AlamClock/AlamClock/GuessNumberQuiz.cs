@@ -47,13 +47,13 @@ namespace AlarmClock
             if(guessBox.Text.Trim() == Number.ToString()) DialogResult = DialogResult.OK;
             else
             {
-                if(guessBox.Text.CompareTo(Number.ToString()) < 0)
+                if(Number.ToString().CompareTo(guessBox.Text.Trim().ToString()) < 0)
                 {
-                    MessageBox.Show("The secret number is greater than your guess!");
+                    MessageBox.Show("The secret number is smaller than your guess!");
                 }
                 else
                 {
-                    MessageBox.Show("The secret number is smaller than your guess!");
+                    MessageBox.Show("The secret number is greater than your guess!");
                 }
             }
         }
