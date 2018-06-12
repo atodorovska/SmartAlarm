@@ -204,6 +204,7 @@
             this.lbSongs.Name = "lbSongs";
             this.lbSongs.Size = new System.Drawing.Size(150, 82);
             this.lbSongs.TabIndex = 13;
+           
             // 
             // maze
             // 
