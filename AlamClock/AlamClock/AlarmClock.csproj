@@ -91,6 +91,12 @@
     <Compile Include="GuessWordQuiz.Designer.cs">
       <DependentUpon>GuessWordQuiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maze.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuessWordQuiz.resx">
       <DependentUpon>GuessWordQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maze.resx">
       <DependentUpon>Maze.cs</DependentUpon>
