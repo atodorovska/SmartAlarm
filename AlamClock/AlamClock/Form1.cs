@@ -28,6 +28,8 @@ namespace AlarmClock
             lbSongs.Items.Add("The Trooper");
             lbSongs.Items.Add("Chop Suey");
             lbSongs.Items.Add("Girl you'll be woman soon");
+            lbSongs.Items.Add("Neat-neat-neat");
+            lbSongs.Items.Add("Bad to the bone");
         }
 
         private void btnSetAlarm_Click(object sender, EventArgs e)

@@ -159,7 +159,11 @@ namespace AlarmClock
                 player = new SoundPlayer(Resources.chopSuey);
             else if (Ringtone == "Girl you'll be woman soon")
                 player = new SoundPlayer(Resources.girlWoman);
-            
+            else if (Ringtone == "Bad to the bone")
+                player = new SoundPlayer(Resources.BadToTheBone);
+            else if (Ringtone == "Neat-neat-neat")
+                player = new SoundPlayer(Resources.neat);
+
         }
     }
 }

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BadToTheBone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bad to the bone lyrics.wmv.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chopSuey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\System Of A Down - Chop Suey!.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -129,6 +132,9 @@
   </data>
   <data name="lalala" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lalala.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="neat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The Damned - Neat Neat Neat  New Rose (Peel session 301176).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="theTrooper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iron Maiden - The Trooper (online-audio-converter.com).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

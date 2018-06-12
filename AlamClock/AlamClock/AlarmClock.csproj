@@ -231,5 +231,11 @@
   <ItemGroup>
     <None Include="Resources\Urge Overkill - Girl You%27ll Be a Woman Soon %28online-audio-converter.com%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad to the bone lyrics.wmv.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Damned - Neat Neat Neat  New Rose %28Peel session 301176%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

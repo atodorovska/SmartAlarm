@@ -63,6 +63,15 @@ namespace AlarmClock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream BadToTheBone {
+            get {
+                return ResourceManager.GetStream("BadToTheBone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream chopSuey {
             get {
                 return ResourceManager.GetStream("chopSuey", resourceCulture);
@@ -93,6 +102,15 @@ namespace AlarmClock.Properties {
         internal static System.IO.UnmanagedMemoryStream lalala {
             get {
                 return ResourceManager.GetStream("lalala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream neat {
+            get {
+                return ResourceManager.GetStream("neat", resourceCulture);
             }
         }
         
