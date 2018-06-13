@@ -14,7 +14,7 @@ namespace AlarmClock
 {
     public partial class Form1 : Form
     {
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace AlarmClock
         private void btnSetAlarm_Click(object sender, EventArgs e)
         {
             String date = DatePicker.Value.ToString("dd/MM/yyyy");
-            String time = upDownHours.Value +":"+upDownMinutes.Value +" " + upDownPMAM.Text;
+            String time = upDownHours.Value + ":" + upDownMinutes.Value + " " + upDownPMAM.Text;
             String song = "Lalala"; // default value
             if (lbSongs.SelectedItem != null)
                 song = lbSongs.SelectedItem as String;
@@ -46,7 +46,7 @@ namespace AlarmClock
             else if (quiz.Checked) game = 3;
             else game = 0;
 
-            Alarm a = new Alarm(date, time,(int)upDownSnooze.Value, (int)upDownTimes.Value,song,game);
+            Alarm a = new Alarm(date, time, (int)upDownSnooze.Value, (int)upDownTimes.Value, song, game);
             lbAlarms.Items.Add(a);
 
         }
@@ -56,20 +56,20 @@ namespace AlarmClock
             if (lbAlarms.Items.Count != 0)
             {
                 foreach (Alarm a in lbAlarms.Items)
-                { 
+                {
                     if (a.Done == true)
                     {
                         continue;
                     }
                     else if (a.check() && a.AlarmOn == false)
-                    { 
+                    {
                         a.start();
 
                     }
                 }
             }
-            
-            
+
+
         }
 
         private void upDownMinutes_ValueChanged(object sender, EventArgs e)
@@ -119,9 +119,8 @@ namespace AlarmClock
         {
             Alarm selected = (lbAlarms.SelectedItem as Alarm);
             // Display all data for the chosen alarm and make changes
-            
+
         }
 
-        
     }
 }

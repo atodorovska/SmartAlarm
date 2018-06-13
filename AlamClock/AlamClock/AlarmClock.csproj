@@ -237,5 +237,11 @@
   <ItemGroup>
     <None Include="Resources\The Damned - Neat Neat Neat  New Rose %28Peel session 301176%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundForm101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarmLogo.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

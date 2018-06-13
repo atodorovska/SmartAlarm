@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuessNumberQuiz));
             this.guessBtn = new System.Windows.Forms.Button();
             this.guessLabel = new System.Windows.Forms.Label();
             this.guessBox = new System.Windows.Forms.TextBox();
@@ -35,13 +36,14 @@
             // 
             // guessBtn
             // 
-            this.guessBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guessBtn.Location = new System.Drawing.Point(12, 132);
+            this.guessBtn.BackColor = System.Drawing.Color.White;
+            this.guessBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessBtn.Location = new System.Drawing.Point(12, 128);
             this.guessBtn.Name = "guessBtn";
-            this.guessBtn.Size = new System.Drawing.Size(346, 30);
+            this.guessBtn.Size = new System.Drawing.Size(346, 34);
             this.guessBtn.TabIndex = 2;
             this.guessBtn.Text = "Guess";
-            this.guessBtn.UseVisualStyleBackColor = true;
+            this.guessBtn.UseVisualStyleBackColor = false;
             this.guessBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // guessLabel
@@ -55,6 +57,7 @@
             // 
             // guessBox
             // 
+            this.guessBox.BackColor = System.Drawing.Color.White;
             this.guessBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guessBox.Location = new System.Drawing.Point(12, 71);
             this.guessBox.Name = "guessBox";
@@ -65,10 +68,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
             this.ClientSize = new System.Drawing.Size(372, 186);
             this.Controls.Add(this.guessBox);
             this.Controls.Add(this.guessLabel);
             this.Controls.Add(this.guessBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GuessNumberQuiz";
             this.Text = "GuessNumberQuiz";
             this.ResumeLayout(false);

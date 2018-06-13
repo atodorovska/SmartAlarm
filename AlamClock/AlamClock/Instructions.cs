@@ -15,6 +15,7 @@ namespace AlarmClock
         public Instructions()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

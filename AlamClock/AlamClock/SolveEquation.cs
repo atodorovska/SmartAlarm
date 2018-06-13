@@ -19,6 +19,11 @@ namespace AlarmClock
             InitializeComponent();
             this.ControlBox = false;
             startQuiz();
+            op.BackColor = Color.White;
+            num1.BackColor = Color.White;
+            num2.BackColor = Color.White;
+
+
         }
 
         public void startQuiz()

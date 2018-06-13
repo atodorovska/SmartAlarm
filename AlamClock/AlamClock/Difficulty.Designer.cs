@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Difficulty));
             this.label1 = new System.Windows.Forms.Label();
             this.easy = new System.Windows.Forms.RadioButton();
             this.medium = new System.Windows.Forms.RadioButton();
@@ -38,69 +39,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 24);
+            this.label1.Size = new System.Drawing.Size(286, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose the difficulty of the game!";
             // 
             // easy
             // 
             this.easy.AutoSize = true;
-            this.easy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.easy.BackColor = System.Drawing.Color.White;
+            this.easy.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.easy.Location = new System.Drawing.Point(16, 61);
             this.easy.Name = "easy";
-            this.easy.Size = new System.Drawing.Size(62, 24);
+            this.easy.Size = new System.Drawing.Size(60, 24);
             this.easy.TabIndex = 1;
             this.easy.TabStop = true;
             this.easy.Text = "Easy";
-            this.easy.UseVisualStyleBackColor = true;
+            this.easy.UseVisualStyleBackColor = false;
             // 
             // medium
             // 
             this.medium.AutoSize = true;
-            this.medium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medium.BackColor = System.Drawing.Color.White;
+            this.medium.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medium.Location = new System.Drawing.Point(116, 61);
             this.medium.Name = "medium";
-            this.medium.Size = new System.Drawing.Size(83, 24);
+            this.medium.Size = new System.Drawing.Size(89, 24);
             this.medium.TabIndex = 2;
             this.medium.TabStop = true;
             this.medium.Text = "Medium";
-            this.medium.UseVisualStyleBackColor = true;
+            this.medium.UseVisualStyleBackColor = false;
             // 
             // hard
             // 
             this.hard.AutoSize = true;
-            this.hard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hard.BackColor = System.Drawing.Color.White;
+            this.hard.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hard.Location = new System.Drawing.Point(236, 61);
             this.hard.Name = "hard";
-            this.hard.Size = new System.Drawing.Size(62, 24);
+            this.hard.Size = new System.Drawing.Size(63, 24);
             this.hard.TabIndex = 3;
             this.hard.TabStop = true;
             this.hard.Text = "Hard";
-            this.hard.UseVisualStyleBackColor = true;
+            this.hard.UseVisualStyleBackColor = false;
             // 
             // difficultyBtn
             // 
-            this.difficultyBtn.Location = new System.Drawing.Point(12, 118);
+            this.difficultyBtn.BackColor = System.Drawing.Color.White;
+            this.difficultyBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.difficultyBtn.Location = new System.Drawing.Point(12, 110);
             this.difficultyBtn.Name = "difficultyBtn";
-            this.difficultyBtn.Size = new System.Drawing.Size(289, 23);
+            this.difficultyBtn.Size = new System.Drawing.Size(289, 31);
             this.difficultyBtn.TabIndex = 4;
             this.difficultyBtn.Text = "Continue";
-            this.difficultyBtn.UseVisualStyleBackColor = true;
+            this.difficultyBtn.UseVisualStyleBackColor = false;
             this.difficultyBtn.Click += new System.EventHandler(this.difficultyBtn_Click);
             // 
             // Difficulty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 160);
+            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.ClientSize = new System.Drawing.Size(317, 161);
             this.Controls.Add(this.difficultyBtn);
             this.Controls.Add(this.hard);
             this.Controls.Add(this.medium);
             this.Controls.Add(this.easy);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Difficulty";
             this.Text = "Difficulty";
             this.ResumeLayout(false);

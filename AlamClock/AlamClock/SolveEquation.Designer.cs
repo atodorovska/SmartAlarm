@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolveEquation));
             this.num1 = new System.Windows.Forms.Label();
             this.op = new System.Windows.Forms.Label();
             this.num2 = new System.Windows.Forms.Label();
@@ -68,10 +69,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(211, 45);
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Tempus Sans ITC", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(197, 43);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 24);
+            this.label4.Size = new System.Drawing.Size(24, 28);
             this.label4.TabIndex = 4;
             this.label4.Text = "=";
             // 
@@ -87,36 +89,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 129);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 24);
+            this.label1.Size = new System.Drawing.Size(168, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Enter result here!";
             // 
             // resultUser
             // 
+            this.resultUser.BackColor = System.Drawing.Color.White;
             this.resultUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultUser.Location = new System.Drawing.Point(30, 172);
+            this.resultUser.Location = new System.Drawing.Point(12, 166);
             this.resultUser.Name = "resultUser";
-            this.resultUser.Size = new System.Drawing.Size(146, 29);
+            this.resultUser.Size = new System.Drawing.Size(168, 29);
             this.resultUser.TabIndex = 7;
             // 
             // okBtn
             // 
-            this.okBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.okBtn.Location = new System.Drawing.Point(200, 161);
+            this.okBtn.BackColor = System.Drawing.Color.White;
+            this.okBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.okBtn.Location = new System.Drawing.Point(201, 161);
             this.okBtn.Name = "okBtn";
             this.okBtn.Size = new System.Drawing.Size(66, 40);
             this.okBtn.TabIndex = 8;
             this.okBtn.Text = "OK";
-            this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.UseVisualStyleBackColor = false;
             this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // SolveEquation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
             this.ClientSize = new System.Drawing.Size(303, 223);
             this.Controls.Add(this.okBtn);
             this.Controls.Add(this.resultUser);
@@ -126,6 +132,7 @@
             this.Controls.Add(this.num2);
             this.Controls.Add(this.op);
             this.Controls.Add(this.num1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SolveEquation";
             this.Text = "SolveEquation";
             this.ResumeLayout(false);

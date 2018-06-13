@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SnoozeIt));
             this.Stop = new System.Windows.Forms.Button();
             this.snooze = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -35,31 +36,37 @@
             // 
             // Stop
             // 
-            this.Stop.Location = new System.Drawing.Point(47, 72);
+            this.Stop.BackColor = System.Drawing.Color.White;
+            this.Stop.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Stop.Location = new System.Drawing.Point(12, 45);
             this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(75, 23);
+            this.Stop.Size = new System.Drawing.Size(120, 64);
             this.Stop.TabIndex = 0;
             this.Stop.Text = "I\'m awake";
-            this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.UseVisualStyleBackColor = false;
             this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // snooze
             // 
-            this.snooze.Location = new System.Drawing.Point(154, 72);
+            this.snooze.BackColor = System.Drawing.Color.White;
+            this.snooze.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snooze.Location = new System.Drawing.Point(152, 45);
             this.snooze.Name = "snooze";
-            this.snooze.Size = new System.Drawing.Size(75, 23);
+            this.snooze.Size = new System.Drawing.Size(120, 64);
             this.snooze.TabIndex = 1;
             this.snooze.Text = "Snooze!";
-            this.snooze.UseVisualStyleBackColor = true;
+            this.snooze.UseVisualStyleBackColor = false;
             this.snooze.Click += new System.EventHandler(this.snooze_Click);
             // 
             // SnoozeIt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
             this.ClientSize = new System.Drawing.Size(284, 162);
             this.Controls.Add(this.snooze);
             this.Controls.Add(this.Stop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SnoozeIt";
             this.Text = "SnoozeIt";
             this.ResumeLayout(false);

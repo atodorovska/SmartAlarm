@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeAlarm));
             this.SuspendLayout();
             // 
             // ChangeAlarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 312);
+            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.ClientSize = new System.Drawing.Size(538, 343);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChangeAlarm";
             this.Text = "ChangeAlarm";
             this.ResumeLayout(false);

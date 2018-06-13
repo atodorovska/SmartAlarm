@@ -44,10 +44,10 @@ namespace AlarmClock
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(guessBox.Text.Trim() == Number.ToString()) DialogResult = DialogResult.OK;
+            if(Number == int.Parse(guessBox.Text.Trim())) DialogResult = DialogResult.OK;
             else
             {
-                if(Number.ToString().CompareTo(guessBox.Text.Trim().ToString()) < 0)
+                if(Number < int.Parse(guessBox.Text.Trim()))
                 {
                     MessageBox.Show("The secret number is smaller than your guess!");
                 }
