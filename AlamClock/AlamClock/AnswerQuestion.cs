@@ -80,7 +80,6 @@ namespace AlarmClock
 
                 if (answer1.Text.Trim().ToLower() == Answer1.ToLower())
                 {
-                    MessageBox.Show("The first answer is correct, try answering the second differently!");
                     if(Difficulty.Mode == 0)
                     {
                         if (Clicks > 3) MessageBox.Show("The first answer is correct! " + "The answer of second question is: " + mapQuestions[secondQ.Text]);
