@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuessWordQuiz));
-            this.label1 = new System.Windows.Forms.Label();
+            this.wordQuessMorning = new System.Windows.Forms.Label();
             this.wordGuess = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // wordQuessMorning
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 53);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.wordQuessMorning.AutoSize = true;
+            this.wordQuessMorning.BackColor = System.Drawing.Color.White;
+            this.wordQuessMorning.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordQuessMorning.Location = new System.Drawing.Point(175, 89);
+            this.wordQuessMorning.Name = "wordQuessMorning";
+            this.wordQuessMorning.Size = new System.Drawing.Size(120, 53);
+            this.wordQuessMorning.TabIndex = 0;
+            this.wordQuessMorning.Text = "label1";
             // 
             // wordGuess
             // 
@@ -87,7 +87,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.wordGuess);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.wordQuessMorning);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GuessWordQuiz";
             this.Text = "GuessWordQuiz";
@@ -98,7 +98,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label wordQuessMorning;
         private System.Windows.Forms.TextBox wordGuess;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;

@@ -46,7 +46,7 @@ namespace AlarmClock
             string s = " ";
 
 
-            if (Difficulty.Mode == 1)
+            if (Difficulty.Mode == 0)
             {
                 for (int i=0; i<word.Length; i++)
                 {
@@ -54,7 +54,7 @@ namespace AlarmClock
                     else s += "_ ";
                 }
             }
-            if(Difficulty.Mode == 2)
+            if(Difficulty.Mode == 1)
             {
                 for (int i = 0; i < word.Length; i++)
                 {
@@ -62,7 +62,7 @@ namespace AlarmClock
                     else s += "_ ";
                 }
             }
-            if(Difficulty.Mode == 3)
+            if(Difficulty.Mode == 2)
             {
                 for (int i = 0; i < word.Length; i++)
                 {
@@ -71,7 +71,7 @@ namespace AlarmClock
                 }
             }
 
-            label1.Text = s;
+            wordQuessMorning.Text = s;
         }
 
         private void button1_Click(object sender, EventArgs e)
