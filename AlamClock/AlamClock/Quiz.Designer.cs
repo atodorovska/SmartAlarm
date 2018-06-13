@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.equation = new System.Windows.Forms.Button();
             this.numbrGuess = new System.Windows.Forms.Button();
+            this.guestionsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // wordQuess
@@ -83,12 +84,25 @@
             this.numbrGuess.UseVisualStyleBackColor = false;
             this.numbrGuess.Click += new System.EventHandler(this.numbrGuess_Click);
             // 
+            // guestionsBtn
+            // 
+            this.guestionsBtn.BackColor = System.Drawing.Color.White;
+            this.guestionsBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guestionsBtn.Location = new System.Drawing.Point(12, 185);
+            this.guestionsBtn.Name = "guestionsBtn";
+            this.guestionsBtn.Size = new System.Drawing.Size(323, 35);
+            this.guestionsBtn.TabIndex = 6;
+            this.guestionsBtn.Text = "Answer a question";
+            this.guestionsBtn.UseVisualStyleBackColor = false;
+            this.guestionsBtn.Click += new System.EventHandler(this.guestionsBtn_Click);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
-            this.ClientSize = new System.Drawing.Size(347, 194);
+            this.ClientSize = new System.Drawing.Size(347, 242);
+            this.Controls.Add(this.guestionsBtn);
             this.Controls.Add(this.numbrGuess);
             this.Controls.Add(this.equation);
             this.Controls.Add(this.label1);
@@ -107,5 +121,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button equation;
         private System.Windows.Forms.Button numbrGuess;
+        private System.Windows.Forms.Button guestionsBtn;
     }
 }

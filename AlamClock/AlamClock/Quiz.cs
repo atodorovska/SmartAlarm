@@ -57,5 +57,17 @@ namespace AlarmClock
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void guestionsBtn_Click(object sender, EventArgs e)
+        {
+            AnswerQuestion answerQuestion = new AnswerQuestion();
+            DialogResult dialogResult = answerQuestion.ShowDialog();
+
+            if(dialogResult == DialogResult.OK)
+            {
+                answerQuestion.Close();
+                DialogResult = DialogResult.OK;
+            }
+        }
     }
 }
