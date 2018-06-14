@@ -36,8 +36,9 @@
             // 
             // Stop
             // 
-            this.Stop.BackColor = System.Drawing.Color.White;
-            this.Stop.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Stop.BackColor = System.Drawing.Color.Coral;
+            this.Stop.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Stop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Stop.Location = new System.Drawing.Point(12, 45);
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(120, 64);
@@ -48,8 +49,9 @@
             // 
             // snooze
             // 
-            this.snooze.BackColor = System.Drawing.Color.White;
-            this.snooze.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snooze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.snooze.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snooze.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.snooze.Location = new System.Drawing.Point(152, 45);
             this.snooze.Name = "snooze";
             this.snooze.Size = new System.Drawing.Size(120, 64);
@@ -62,7 +64,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 162);
             this.Controls.Add(this.snooze);
             this.Controls.Add(this.Stop);

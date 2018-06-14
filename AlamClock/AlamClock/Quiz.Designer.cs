@@ -38,8 +38,9 @@
             // 
             // wordQuess
             // 
-            this.wordQuess.BackColor = System.Drawing.Color.White;
-            this.wordQuess.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordQuess.BackColor = System.Drawing.Color.DarkCyan;
+            this.wordQuess.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordQuess.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.wordQuess.Location = new System.Drawing.Point(12, 62);
             this.wordQuess.Name = "wordQuess";
             this.wordQuess.Size = new System.Drawing.Size(323, 35);
@@ -51,19 +52,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(28, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 24);
+            this.label1.Size = new System.Drawing.Size(295, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Chose which quiz you want to take!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // equation
             // 
-            this.equation.BackColor = System.Drawing.Color.White;
-            this.equation.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equation.BackColor = System.Drawing.Color.DarkCyan;
+            this.equation.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.equation.Location = new System.Drawing.Point(12, 103);
             this.equation.Name = "equation";
             this.equation.Size = new System.Drawing.Size(323, 35);
@@ -74,8 +77,9 @@
             // 
             // numbrGuess
             // 
-            this.numbrGuess.BackColor = System.Drawing.Color.White;
-            this.numbrGuess.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numbrGuess.BackColor = System.Drawing.Color.DarkCyan;
+            this.numbrGuess.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numbrGuess.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.numbrGuess.Location = new System.Drawing.Point(12, 144);
             this.numbrGuess.Name = "numbrGuess";
             this.numbrGuess.Size = new System.Drawing.Size(323, 35);
@@ -86,8 +90,9 @@
             // 
             // guestionsBtn
             // 
-            this.guestionsBtn.BackColor = System.Drawing.Color.White;
-            this.guestionsBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guestionsBtn.BackColor = System.Drawing.Color.DarkCyan;
+            this.guestionsBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guestionsBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.guestionsBtn.Location = new System.Drawing.Point(12, 185);
             this.guestionsBtn.Name = "guestionsBtn";
             this.guestionsBtn.Size = new System.Drawing.Size(323, 35);
@@ -100,7 +105,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(347, 242);
             this.Controls.Add(this.guestionsBtn);
             this.Controls.Add(this.numbrGuess);

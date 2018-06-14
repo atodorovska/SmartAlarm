@@ -36,8 +36,8 @@
             // 
             // guessBtn
             // 
-            this.guessBtn.BackColor = System.Drawing.Color.White;
-            this.guessBtn.Font = new System.Drawing.Font("Tempus Sans ITC", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessBtn.BackColor = System.Drawing.Color.Transparent;
+            this.guessBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guessBtn.Location = new System.Drawing.Point(12, 128);
             this.guessBtn.Name = "guessBtn";
             this.guessBtn.Size = new System.Drawing.Size(346, 34);
@@ -68,7 +68,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(372, 186);
             this.Controls.Add(this.guessBox);
             this.Controls.Add(this.guessLabel);
