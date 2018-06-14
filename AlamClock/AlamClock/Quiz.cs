@@ -16,6 +16,10 @@ namespace AlarmClock
         {
             InitializeComponent();
             this.ControlBox = false;
+            Difficulty difficulty = new Difficulty();
+            difficulty.ShowDialog();
+
+            if (difficulty.DialogResult == DialogResult.OK) difficulty.Close();
         }
 
         private void wordQuess_Click(object sender, EventArgs e)
@@ -50,6 +54,18 @@ namespace AlarmClock
             if (dialogResult == DialogResult.OK)
             {
                 guessNumberQuiz.Close();
+                DialogResult = DialogResult.OK;
+            }
+        }
+
+        private void guestionsBtn_Click(object sender, EventArgs e)
+        {
+            AnswerQuestion answerQuestion = new AnswerQuestion();
+            DialogResult dialogResult = answerQuestion.ShowDialog();
+
+            if(dialogResult == DialogResult.OK)
+            {
+                answerQuestion.Close();
                 DialogResult = DialogResult.OK;
             }
         }

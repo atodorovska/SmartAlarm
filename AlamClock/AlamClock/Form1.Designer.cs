@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnSetAlarm = new System.Windows.Forms.Button();
             this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.upDownMinutes = new System.Windows.Forms.NumericUpDown();
@@ -46,6 +47,11 @@
             this.maze = new System.Windows.Forms.RadioButton();
             this.quiz = new System.Windows.Forms.RadioButton();
             this.shuffle = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
@@ -54,25 +60,33 @@
             // 
             // btnSetAlarm
             // 
-            this.btnSetAlarm.Location = new System.Drawing.Point(254, 67);
+            this.btnSetAlarm.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnSetAlarm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetAlarm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSetAlarm.Location = new System.Drawing.Point(523, 64);
             this.btnSetAlarm.Name = "btnSetAlarm";
-            this.btnSetAlarm.Size = new System.Drawing.Size(75, 23);
+            this.btnSetAlarm.Size = new System.Drawing.Size(128, 48);
             this.btnSetAlarm.TabIndex = 0;
             this.btnSetAlarm.Text = "Set Alarm";
-            this.btnSetAlarm.UseVisualStyleBackColor = true;
+            this.btnSetAlarm.UseVisualStyleBackColor = false;
             this.btnSetAlarm.Click += new System.EventHandler(this.btnSetAlarm_Click);
             // 
             // DatePicker
             // 
-            this.DatePicker.Location = new System.Drawing.Point(30, 27);
+            this.DatePicker.CalendarMonthBackground = System.Drawing.Color.White;
+            this.DatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DatePicker.Location = new System.Drawing.Point(159, 78);
             this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(200, 20);
+            this.DatePicker.Size = new System.Drawing.Size(325, 23);
             this.DatePicker.TabIndex = 1;
             this.DatePicker.Value = new System.DateTime(2018, 5, 28, 0, 0, 0, 0);
+            this.DatePicker.ValueChanged += new System.EventHandler(this.DatePicker_ValueChanged);
             // 
             // upDownMinutes
             // 
-            this.upDownMinutes.Location = new System.Drawing.Point(96, 67);
+            this.upDownMinutes.BackColor = System.Drawing.Color.White;
+            this.upDownMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upDownMinutes.Location = new System.Drawing.Point(279, 130);
             this.upDownMinutes.Maximum = new decimal(new int[] {
             60,
             0,
@@ -84,20 +98,22 @@
             0,
             -2147483648});
             this.upDownMinutes.Name = "upDownMinutes";
-            this.upDownMinutes.Size = new System.Drawing.Size(60, 20);
+            this.upDownMinutes.Size = new System.Drawing.Size(90, 23);
             this.upDownMinutes.TabIndex = 3;
             this.upDownMinutes.ValueChanged += new System.EventHandler(this.upDownMinutes_ValueChanged);
             // 
             // upDownHours
             // 
-            this.upDownHours.Location = new System.Drawing.Point(30, 67);
+            this.upDownHours.BackColor = System.Drawing.Color.White;
+            this.upDownHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upDownHours.Location = new System.Drawing.Point(159, 129);
             this.upDownHours.Maximum = new decimal(new int[] {
             13,
             0,
             0,
             0});
             this.upDownHours.Name = "upDownHours";
-            this.upDownHours.Size = new System.Drawing.Size(60, 20);
+            this.upDownHours.Size = new System.Drawing.Size(90, 23);
             this.upDownHours.TabIndex = 4;
             this.upDownHours.Value = new decimal(new int[] {
             1,
@@ -108,12 +124,14 @@
             // 
             // upDownPMAM
             // 
+            this.upDownPMAM.BackColor = System.Drawing.Color.White;
+            this.upDownPMAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upDownPMAM.Items.Add("PM");
             this.upDownPMAM.Items.Add("AM");
-            this.upDownPMAM.Location = new System.Drawing.Point(162, 67);
+            this.upDownPMAM.Location = new System.Drawing.Point(394, 130);
             this.upDownPMAM.Name = "upDownPMAM";
             this.upDownPMAM.ReadOnly = true;
-            this.upDownPMAM.Size = new System.Drawing.Size(68, 20);
+            this.upDownPMAM.Size = new System.Drawing.Size(90, 23);
             this.upDownPMAM.TabIndex = 5;
             this.upDownPMAM.Text = "PM";
             // 
@@ -125,123 +143,223 @@
             // 
             // upDownSnooze
             // 
-            this.upDownSnooze.Location = new System.Drawing.Point(96, 109);
+            this.upDownSnooze.BackColor = System.Drawing.Color.White;
+            this.upDownSnooze.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upDownSnooze.Location = new System.Drawing.Point(159, 178);
             this.upDownSnooze.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             0});
             this.upDownSnooze.Name = "upDownSnooze";
-            this.upDownSnooze.Size = new System.Drawing.Size(60, 20);
+            this.upDownSnooze.Size = new System.Drawing.Size(90, 23);
             this.upDownSnooze.TabIndex = 6;
             this.upDownSnooze.ValueChanged += new System.EventHandler(this.upDownSnooze_ValueChanged);
             // 
             // upDownTimes
             // 
-            this.upDownTimes.Location = new System.Drawing.Point(96, 147);
+            this.upDownTimes.BackColor = System.Drawing.Color.White;
+            this.upDownTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upDownTimes.Location = new System.Drawing.Point(159, 231);
             this.upDownTimes.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.upDownTimes.Name = "upDownTimes";
-            this.upDownTimes.Size = new System.Drawing.Size(60, 20);
+            this.upDownTimes.Size = new System.Drawing.Size(90, 23);
             this.upDownTimes.TabIndex = 7;
             this.upDownTimes.ValueChanged += new System.EventHandler(this.upDownTimes_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 111);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(15, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(68, 21);
             this.label1.TabIndex = 8;
             this.label1.Text = "Snooze:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 153);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(15, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Limit:";
             // 
             // lbAlarms
             // 
+            this.lbAlarms.BackColor = System.Drawing.Color.White;
+            this.lbAlarms.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAlarms.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbAlarms.FormattingEnabled = true;
-            this.lbAlarms.Location = new System.Drawing.Point(237, 164);
+            this.lbAlarms.ItemHeight = 19;
+            this.lbAlarms.Location = new System.Drawing.Point(556, 248);
             this.lbAlarms.Name = "lbAlarms";
-            this.lbAlarms.Size = new System.Drawing.Size(224, 173);
+            this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lbAlarms.Size = new System.Drawing.Size(310, 175);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(305, 135);
+            this.btnRemove.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnRemove.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRemove.Location = new System.Drawing.Point(556, 197);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.Size = new System.Drawing.Size(140, 34);
             this.btnRemove.TabIndex = 11;
             this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(386, 135);
+            this.btnChange.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnChange.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnChange.Location = new System.Drawing.Point(726, 197);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(75, 23);
+            this.btnChange.Size = new System.Drawing.Size(140, 34);
             this.btnChange.TabIndex = 12;
             this.btnChange.Text = "Change";
-            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.UseVisualStyleBackColor = false;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // lbSongs
             // 
+            this.lbSongs.BackColor = System.Drawing.Color.White;
+            this.lbSongs.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSongs.FormattingEnabled = true;
-            this.lbSongs.Location = new System.Drawing.Point(30, 187);
+            this.lbSongs.ItemHeight = 19;
+            this.lbSongs.Location = new System.Drawing.Point(160, 283);
             this.lbSongs.Name = "lbSongs";
-            this.lbSongs.Size = new System.Drawing.Size(150, 82);
+            this.lbSongs.Size = new System.Drawing.Size(364, 99);
             this.lbSongs.TabIndex = 13;
             // 
             // maze
             // 
             this.maze.AutoSize = true;
-            this.maze.Location = new System.Drawing.Point(30, 275);
+            this.maze.BackColor = System.Drawing.Color.Transparent;
+            this.maze.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maze.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.maze.Location = new System.Drawing.Point(159, 408);
             this.maze.Name = "maze";
-            this.maze.Size = new System.Drawing.Size(82, 17);
+            this.maze.Size = new System.Drawing.Size(110, 23);
             this.maze.TabIndex = 14;
             this.maze.TabStop = true;
             this.maze.Text = "Maze Game";
-            this.maze.UseVisualStyleBackColor = true;
+            this.maze.UseVisualStyleBackColor = false;
             // 
             // quiz
             // 
             this.quiz.AutoSize = true;
-            this.quiz.Location = new System.Drawing.Point(30, 320);
+            this.quiz.BackColor = System.Drawing.Color.Transparent;
+            this.quiz.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.quiz.Location = new System.Drawing.Point(413, 408);
             this.quiz.Name = "quiz";
-            this.quiz.Size = new System.Drawing.Size(77, 17);
+            this.quiz.Size = new System.Drawing.Size(104, 23);
             this.quiz.TabIndex = 15;
             this.quiz.TabStop = true;
             this.quiz.Text = "Quiz Game";
-            this.quiz.UseVisualStyleBackColor = true;
+            this.quiz.UseVisualStyleBackColor = false;
             // 
             // shuffle
             // 
             this.shuffle.AutoSize = true;
-            this.shuffle.Location = new System.Drawing.Point(30, 298);
+            this.shuffle.BackColor = System.Drawing.Color.Transparent;
+            this.shuffle.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shuffle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.shuffle.Location = new System.Drawing.Point(279, 408);
             this.shuffle.Name = "shuffle";
-            this.shuffle.Size = new System.Drawing.Size(89, 17);
+            this.shuffle.Size = new System.Drawing.Size(124, 23);
             this.shuffle.TabIndex = 16;
             this.shuffle.TabStop = true;
             this.shuffle.Text = "Shuffle Game";
-            this.shuffle.UseVisualStyleBackColor = true;
+            this.shuffle.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(365, 40);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Snooze Me Alarm Clock ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(15, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 21);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Set the date:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(15, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 21);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Set the time:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(15, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 21);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Alarm sound:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(15, 409);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 21);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Alarm game:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 351);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(882, 456);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.shuffle);
             this.Controls.Add(this.quiz);
             this.Controls.Add(this.maze);
@@ -288,6 +406,11 @@
         private System.Windows.Forms.RadioButton maze;
         private System.Windows.Forms.RadioButton quiz;
         private System.Windows.Forms.RadioButton shuffle;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

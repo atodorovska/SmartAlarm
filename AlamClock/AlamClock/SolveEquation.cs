@@ -19,6 +19,11 @@ namespace AlarmClock
             InitializeComponent();
             this.ControlBox = false;
             startQuiz();
+            op.BackColor = Color.White;
+            num1.BackColor = Color.White;
+            num2.BackColor = Color.White;
+
+
         }
 
         public void startQuiz()
@@ -31,11 +36,26 @@ namespace AlarmClock
             if (o == 2) op.Text = "*";
             if (o == 3) op.Text = "/";
 
-            int n1 = random.Next(10);
-            int n2 = random.Next(10);
-            int res;
+            int n1, n2, res;
 
-            if(o == 0)
+            if (Difficulty.Mode == 0)
+            {
+                n1 = random.Next(10);
+                n2 = random.Next(10);
+            }
+            else if(Difficulty.Mode == 1)
+            {
+                n1 = random.Next(25);
+                n2 = random.Next(25);
+            }
+            else
+            {
+                n1 = random.Next(50);
+                n2 = random.Next(50);
+            }
+
+
+            if (o == 0)
             {
                 Result = n1 + n2;
 

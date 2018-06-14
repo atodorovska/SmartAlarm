@@ -61,11 +61,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alarm.cs" />
+    <Compile Include="AnswerQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnswerQuestion.Designer.cs">
+      <DependentUpon>AnswerQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeAlarm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangeAlarm.Designer.cs">
       <DependentUpon>ChangeAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Difficulty.Designer.cs">
+      <DependentUpon>Difficulty.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -84,6 +96,12 @@
     </Compile>
     <Compile Include="GuessWordQuiz.Designer.cs">
       <DependentUpon>GuessWordQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
     </Compile>
     <Compile Include="Maze.cs">
       <SubType>Form</SubType>
@@ -117,8 +135,14 @@
     <Compile Include="SolveEquation.Designer.cs">
       <DependentUpon>SolveEquation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnswerQuestion.resx">
+      <DependentUpon>AnswerQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeAlarm.resx">
       <DependentUpon>ChangeAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Difficulty.resx">
+      <DependentUpon>Difficulty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -128,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuessWordQuiz.resx">
       <DependentUpon>GuessWordQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maze.resx">
       <DependentUpon>Maze.cs</DependentUpon>
@@ -200,6 +227,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lalala.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC-DC - Highway to Hell %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iron Maiden - The Trooper %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System Of A Down - Chop Suey!.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Urge Overkill - Girl You%27ll Be a Woman Soon %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad to the bone lyrics.wmv.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Damned - Neat Neat Neat  New Rose %28Peel session 301176%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundForm101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarmLogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

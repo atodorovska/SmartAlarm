@@ -151,7 +151,19 @@ namespace AlarmClock
         {
             if (Ringtone == "Lalala")
                 player = new SoundPlayer(Resources.lalala);
-          //  else if (...);
+            else if (Ringtone == "Highway to Hell")
+                player = new SoundPlayer(Resources.highwayToHell);
+            else if (Ringtone == "The Trooper")
+                player = new SoundPlayer(Resources.theTrooper);
+            else if (Ringtone == "Chop Suey")
+                player = new SoundPlayer(Resources.chopSuey);
+            else if (Ringtone == "Girl you'll be woman soon")
+                player = new SoundPlayer(Resources.girlWoman);
+            else if (Ringtone == "Bad to the bone")
+                player = new SoundPlayer(Resources.BadToTheBone);
+            else if (Ringtone == "Neat-neat-neat")
+                player = new SoundPlayer(Resources.neat);
+
         }
     }
 }
