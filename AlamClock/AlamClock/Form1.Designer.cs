@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnSetAlarm = new System.Windows.Forms.Button();
             this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.upDownMinutes = new System.Windows.Forms.NumericUpDown();
@@ -59,11 +60,12 @@
             // 
             // btnSetAlarm
             // 
-            this.btnSetAlarm.BackColor = System.Drawing.Color.White;
-            this.btnSetAlarm.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetAlarm.Location = new System.Drawing.Point(634, 78);
+            this.btnSetAlarm.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetAlarm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetAlarm.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSetAlarm.Location = new System.Drawing.Point(523, 64);
             this.btnSetAlarm.Name = "btnSetAlarm";
-            this.btnSetAlarm.Size = new System.Drawing.Size(128, 75);
+            this.btnSetAlarm.Size = new System.Drawing.Size(128, 48);
             this.btnSetAlarm.TabIndex = 0;
             this.btnSetAlarm.Text = "Set Alarm";
             this.btnSetAlarm.UseVisualStyleBackColor = false;
@@ -171,43 +173,45 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(15, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 23);
+            this.label1.Size = new System.Drawing.Size(68, 21);
             this.label1.TabIndex = 8;
             this.label1.Text = "Snooze:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(15, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 23);
+            this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Limit:";
             // 
             // lbAlarms
             // 
             this.lbAlarms.BackColor = System.Drawing.Color.White;
-            this.lbAlarms.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAlarms.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAlarms.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbAlarms.FormattingEnabled = true;
-            this.lbAlarms.ItemHeight = 20;
+            this.lbAlarms.ItemHeight = 19;
             this.lbAlarms.Location = new System.Drawing.Point(556, 248);
             this.lbAlarms.Name = "lbAlarms";
             this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lbAlarms.Size = new System.Drawing.Size(310, 184);
+            this.lbAlarms.Size = new System.Drawing.Size(310, 175);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);
             // 
             // btnRemove
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.White;
-            this.btnRemove.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemove.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRemove.Location = new System.Drawing.Point(556, 197);
             this.btnRemove.Name = "btnRemove";
@@ -219,8 +223,8 @@
             // 
             // btnChange
             // 
-            this.btnChange.BackColor = System.Drawing.Color.White;
-            this.btnChange.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.BackColor = System.Drawing.Color.Transparent;
+            this.btnChange.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChange.Location = new System.Drawing.Point(726, 197);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(140, 34);
@@ -232,22 +236,23 @@
             // lbSongs
             // 
             this.lbSongs.BackColor = System.Drawing.Color.White;
-            this.lbSongs.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSongs.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSongs.FormattingEnabled = true;
-            this.lbSongs.ItemHeight = 20;
+            this.lbSongs.ItemHeight = 19;
             this.lbSongs.Location = new System.Drawing.Point(160, 283);
             this.lbSongs.Name = "lbSongs";
-            this.lbSongs.Size = new System.Drawing.Size(364, 104);
+            this.lbSongs.Size = new System.Drawing.Size(364, 99);
             this.lbSongs.TabIndex = 13;
             // 
             // maze
             // 
             this.maze.AutoSize = true;
-            this.maze.BackColor = System.Drawing.Color.White;
-            this.maze.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maze.BackColor = System.Drawing.Color.Transparent;
+            this.maze.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maze.ForeColor = System.Drawing.SystemColors.ControlText;
             this.maze.Location = new System.Drawing.Point(159, 408);
             this.maze.Name = "maze";
-            this.maze.Size = new System.Drawing.Size(114, 24);
+            this.maze.Size = new System.Drawing.Size(110, 23);
             this.maze.TabIndex = 14;
             this.maze.TabStop = true;
             this.maze.Text = "Maze Game";
@@ -256,11 +261,12 @@
             // quiz
             // 
             this.quiz.AutoSize = true;
-            this.quiz.BackColor = System.Drawing.Color.White;
-            this.quiz.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz.BackColor = System.Drawing.Color.Transparent;
+            this.quiz.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz.ForeColor = System.Drawing.SystemColors.ControlText;
             this.quiz.Location = new System.Drawing.Point(413, 408);
             this.quiz.Name = "quiz";
-            this.quiz.Size = new System.Drawing.Size(111, 24);
+            this.quiz.Size = new System.Drawing.Size(104, 23);
             this.quiz.TabIndex = 15;
             this.quiz.TabStop = true;
             this.quiz.Text = "Quiz Game";
@@ -269,11 +275,12 @@
             // shuffle
             // 
             this.shuffle.AutoSize = true;
-            this.shuffle.BackColor = System.Drawing.Color.White;
-            this.shuffle.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shuffle.BackColor = System.Drawing.Color.Transparent;
+            this.shuffle.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shuffle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.shuffle.Location = new System.Drawing.Point(279, 408);
             this.shuffle.Name = "shuffle";
-            this.shuffle.Size = new System.Drawing.Size(128, 24);
+            this.shuffle.Size = new System.Drawing.Size(124, 23);
             this.shuffle.TabIndex = 16;
             this.shuffle.TabStop = true;
             this.shuffle.Text = "Shuffle Game";
@@ -282,55 +289,60 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Brush Script MT", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(329, 41);
+            this.label3.Size = new System.Drawing.Size(365, 40);
             this.label3.TabIndex = 17;
             this.label3.Text = "Snooze Me Alarm Clock ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(15, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 23);
+            this.label4.Size = new System.Drawing.Size(102, 21);
             this.label4.TabIndex = 18;
             this.label4.Text = "Set the date:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(15, 129);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 23);
+            this.label5.Size = new System.Drawing.Size(103, 21);
             this.label5.TabIndex = 19;
             this.label5.Text = "Set the time:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(15, 283);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 23);
+            this.label6.Size = new System.Drawing.Size(109, 21);
             this.label6.TabIndex = 20;
             this.label6.Text = "Alarm sound:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Tempus Sans ITC", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(15, 409);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 23);
+            this.label7.Size = new System.Drawing.Size(106, 21);
             this.label7.TabIndex = 21;
             this.label7.Text = "Alarm game:";
             // 
@@ -338,8 +350,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
-            this.ClientSize = new System.Drawing.Size(878, 445);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(882, 456);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
