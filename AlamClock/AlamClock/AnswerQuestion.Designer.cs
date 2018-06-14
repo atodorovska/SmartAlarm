@@ -40,33 +40,36 @@
             // firstQ
             // 
             this.firstQ.AutoSize = true;
-            this.firstQ.BackColor = System.Drawing.Color.White;
-            this.firstQ.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstQ.BackColor = System.Drawing.Color.Transparent;
+            this.firstQ.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.firstQ.Location = new System.Drawing.Point(10, 71);
             this.firstQ.Name = "firstQ";
-            this.firstQ.Size = new System.Drawing.Size(75, 31);
+            this.firstQ.Size = new System.Drawing.Size(74, 29);
             this.firstQ.TabIndex = 0;
             this.firstQ.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(189, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(504, 26);
+            this.label2.Size = new System.Drawing.Size(468, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "The questions are on the topic of General Knowledge";
             // 
             // secondQ
             // 
             this.secondQ.AutoSize = true;
-            this.secondQ.BackColor = System.Drawing.Color.White;
-            this.secondQ.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondQ.BackColor = System.Drawing.Color.Transparent;
+            this.secondQ.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.secondQ.Location = new System.Drawing.Point(10, 142);
             this.secondQ.Name = "secondQ";
-            this.secondQ.Size = new System.Drawing.Size(78, 31);
+            this.secondQ.Size = new System.Drawing.Size(79, 29);
             this.secondQ.TabIndex = 2;
             this.secondQ.Text = "label3";
             // 
@@ -90,8 +93,9 @@
             // 
             // btnOK
             // 
-            this.btnOK.BackColor = System.Drawing.Color.White;
-            this.btnOK.Font = new System.Drawing.Font("Tempus Sans ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.BackColor = System.Drawing.Color.Salmon;
+            this.btnOK.Font = new System.Drawing.Font("Bahnschrift SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.Snow;
             this.btnOK.Location = new System.Drawing.Point(365, 209);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(187, 49);
@@ -104,7 +108,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 270);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.answer2);

@@ -60,9 +60,9 @@
             // 
             // btnSetAlarm
             // 
-            this.btnSetAlarm.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetAlarm.BackColor = System.Drawing.Color.DarkCyan;
             this.btnSetAlarm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetAlarm.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSetAlarm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSetAlarm.Location = new System.Drawing.Point(523, 64);
             this.btnSetAlarm.Name = "btnSetAlarm";
             this.btnSetAlarm.Size = new System.Drawing.Size(128, 48);
@@ -175,7 +175,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(15, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 21);
@@ -187,7 +187,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(15, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 21);
@@ -210,9 +210,9 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemove.BackColor = System.Drawing.Color.DarkCyan;
             this.btnRemove.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRemove.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRemove.Location = new System.Drawing.Point(556, 197);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(140, 34);
@@ -223,8 +223,9 @@
             // 
             // btnChange
             // 
-            this.btnChange.BackColor = System.Drawing.Color.Transparent;
+            this.btnChange.BackColor = System.Drawing.Color.DarkCyan;
             this.btnChange.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnChange.Location = new System.Drawing.Point(726, 197);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(140, 34);
@@ -249,7 +250,7 @@
             this.maze.AutoSize = true;
             this.maze.BackColor = System.Drawing.Color.Transparent;
             this.maze.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maze.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.maze.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.maze.Location = new System.Drawing.Point(159, 408);
             this.maze.Name = "maze";
             this.maze.Size = new System.Drawing.Size(110, 23);
@@ -263,7 +264,7 @@
             this.quiz.AutoSize = true;
             this.quiz.BackColor = System.Drawing.Color.Transparent;
             this.quiz.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quiz.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.quiz.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.quiz.Location = new System.Drawing.Point(413, 408);
             this.quiz.Name = "quiz";
             this.quiz.Size = new System.Drawing.Size(104, 23);
@@ -277,7 +278,7 @@
             this.shuffle.AutoSize = true;
             this.shuffle.BackColor = System.Drawing.Color.Transparent;
             this.shuffle.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shuffle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.shuffle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.shuffle.Location = new System.Drawing.Point(279, 408);
             this.shuffle.Name = "shuffle";
             this.shuffle.Size = new System.Drawing.Size(124, 23);
@@ -291,7 +292,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(365, 40);
@@ -303,7 +304,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(15, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 21);
@@ -315,7 +316,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(15, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 21);
@@ -327,7 +328,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(15, 283);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 21);
@@ -339,7 +340,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(15, 409);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 21);

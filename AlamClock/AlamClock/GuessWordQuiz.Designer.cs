@@ -38,11 +38,12 @@
             // wordQuessMorning
             // 
             this.wordQuessMorning.AutoSize = true;
-            this.wordQuessMorning.BackColor = System.Drawing.Color.White;
-            this.wordQuessMorning.Font = new System.Drawing.Font("Tempus Sans ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wordQuessMorning.Location = new System.Drawing.Point(175, 89);
+            this.wordQuessMorning.BackColor = System.Drawing.Color.Transparent;
+            this.wordQuessMorning.Font = new System.Drawing.Font("Bahnschrift SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordQuessMorning.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.wordQuessMorning.Location = new System.Drawing.Point(129, 78);
             this.wordQuessMorning.Name = "wordQuessMorning";
-            this.wordQuessMorning.Size = new System.Drawing.Size(120, 53);
+            this.wordQuessMorning.Size = new System.Drawing.Size(121, 48);
             this.wordQuessMorning.TabIndex = 0;
             this.wordQuessMorning.Text = "label1";
             // 
@@ -57,8 +58,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(335, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 48);
@@ -70,11 +72,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 19);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(52, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(432, 26);
+            this.label2.Size = new System.Drawing.Size(399, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "The words are of category \"Morning routine\"";
             // 
@@ -82,7 +85,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlarmClock.Properties.Resources.backgroundForm101;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 252);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
