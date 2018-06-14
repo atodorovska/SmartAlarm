@@ -80,6 +80,7 @@
             this.DatePicker.Size = new System.Drawing.Size(325, 23);
             this.DatePicker.TabIndex = 1;
             this.DatePicker.Value = new System.DateTime(2018, 5, 28, 0, 0, 0, 0);
+            this.DatePicker.ValueChanged += new System.EventHandler(this.DatePicker_ValueChanged);
             // 
             // upDownMinutes
             // 
