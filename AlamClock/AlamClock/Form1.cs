@@ -31,9 +31,7 @@ namespace AlarmClock
             lbSongs.Items.Add("Neat-neat-neat");
             lbSongs.Items.Add("Bad to the bone");
         }
-
-        private void btnSetAlarm_Click(object sender, EventArgs e)
-        {
+        private void setAlarm() {
             String date = DatePicker.Value.ToString("dd/MM/yyyy");
             String time = upDownHours.Value + ":" + upDownMinutes.Value + " " + upDownPMAM.Text;
             String song = "Lalala"; // default value
@@ -48,6 +46,11 @@ namespace AlarmClock
 
             Alarm a = new Alarm(date, time, (int)upDownSnooze.Value, (int)upDownTimes.Value, song, game);
             lbAlarms.Items.Add(a);
+
+        }
+        private void btnSetAlarm_Click(object sender, EventArgs e)
+        {
+            setAlarm();
 
         }
 
@@ -119,8 +122,16 @@ namespace AlarmClock
         {
             Alarm selected = (lbAlarms.SelectedItem as Alarm);
             // Display all data for the chosen alarm and make changes
+            if (selected != null) {
+                setAlarm();
+                lbAlarms.Items.Remove(selected);
+            }
 
         }
 
+        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
